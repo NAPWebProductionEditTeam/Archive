@@ -40,7 +40,7 @@ var app = app || {};
     
     this.next = function() {
         if (! this.get('next')) {
-            this.set('next', this.get_url());
+            this.data.next = this.get_url();
         }
         
         var data = this.call();
