@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  },
+  "name": "archive",
+  "version": "1.0.0",
+  "description": "The Edit archive loader",
+  "main": "src/app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAPWebProductionEditTeam/Archive.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NAPWebProductionEditTeam/Archive/issues"
+  },
+  "homepage": "https://github.com/NAPWebProductionEditTeam/Archive#readme"
+}
