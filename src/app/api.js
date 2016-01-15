@@ -1,5 +1,3 @@
-var app = app || {};
-
 (function(window, $, app) {
     this.data = this.defaults = {
         region: 'intl',
@@ -21,7 +19,7 @@ var app = app || {};
         }
         
         return null;
-    }
+    };
     
     this.get_url = function() {
         var data = this.data;
@@ -36,40 +34,45 @@ var app = app || {};
         }
         
         return '/' + data.region + '/magazineArchive.nap?sort=' + data.sort + '&limit=' + data.limit + '&offset=' + data.offset + '&total=' + data.total + '&exclude=true';
-    }
+    };
     
-    this.next = function() {
-        if (! this.get('next')) {
+    this.next = function(callback) {
+        if (this.get('next') !== null) {
             this.data.next = this.get_url();
         }
         
-        var data = this.call();
+        this.loading(true);
         
-        // filter data to:
-        // {
-        //        covers: {
-        //            1x: '',
-        //            2x: ''
-        //        }
-        //        number: int,
-        //        date: str
-        // }
-        
-        // set next, total, ...
-        
-        return data;
+        $.getJSON(this.data.next, function(json) {
+            this.data.next = json.next;
+            this.data.total = json.total;
+            
+            var response = {
+                'issues': []
+            };
+            
+            for (var i = 0; i < json.slice.length; i++) {
+                response.issues.push({
+                    'covers': {
+                        'at1x': json.slice[i].cover,
+                        'at2x': json.slice[i].cover.replace(/(.*)(\..*)$/, '$1@2x$2')
+                    },
+                    'issue_number': json.slice[i].number,
+                    'date': json.slice[i].date.medium
+                });
+            }
+            
+            callback(response);
+        });
     };
     
-    this.call = function() {
-        this.data.loading = true;
-        
-        // call api && return all data
-        // set loading to false
-    }
-    
-    this.loading = function() {
+    this.isLoading = function() {
         return this.get('loading');
-    }
+    };
+    
+    this.loading = function(loading) {
+        this.data.loading = loading;
+    };
     
     app.api = {
         next: this.next,
