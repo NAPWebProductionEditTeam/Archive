@@ -1,6 +1,6 @@
 (function(window, $, app, hbs) {
-    this.render = function(data) {
-        var src = $("#archive_issue").html();
+    var render = function(data) {
+        var src = app.templates.archive;
         var tpl = hbs.compile(src);
         var rendered = tpl(data);
         var $rendered = $(rendered);
@@ -11,9 +11,9 @@
         });
     };
     
-    return {
-        render: this.render
+    app.view = {
+        render: render
     };
-})(window, jQuery, app, Handlebars);
+})(window, jQuery, Archive, Handlebars);
 
 

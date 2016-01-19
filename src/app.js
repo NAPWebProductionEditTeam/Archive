@@ -8,4 +8,4 @@
             }
         }
     });
-})(window, jQuery, app);
+})(window, jQuery, Archive);

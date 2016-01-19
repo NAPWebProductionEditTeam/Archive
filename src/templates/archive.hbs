@@ -1,12 +1,10 @@
-<template id="archive_issue">
-    <div class="archive_page" style="display: none;">
-        {{#each issues}}
-            <li class="archivedIssue">
-                 <a href="/magazine/{{ issue_number }}" title="">
-                    <img src="{{ covers.at1x }}" alt="" title="" data-img-src@2x="{{ covers.at2x }}">
-                    <span class="issueDate">{{ date }}</span>
-                </a>
-            </li>
-        {{/each}}
-    </div>
-</template>
+<div class="archive_page" style="display: none;">
+    {{#each issues}}
+        <li class="archivedIssue">
+             <a href="/magazine/{{ issue_number }}" title="">
+                <img src="{{ covers.at1x }}" alt="" title="" data-img-src@2x="{{ covers.at2x }}">
+                <span class="issueDate">{{ date }}</span>
+            </a>
+        </li>
+    {{/each}}
+</div>

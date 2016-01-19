@@ -1,5 +1,6 @@
 (function(window, $, app) {
-    this.data = this.defaults = {
+    var data, defaults;
+    defaults = data = {
         region: 'intl',
         sort: 'desc',
         language: 'en',
@@ -11,20 +12,17 @@
         loading: false
     };
     
-    this.user_settings = ['region', 'language'];
+    var user_settings = ['region', 'language'];
     
-    this.get = function(key) {
-        if (typeof(this.data[key]) !== 'undefined') {
-            return this.data[key];
+    var get = function(key) {
+        if (typeof(data[key]) !== 'undefined') {
+            return data[key];
         }
         
         return null;
     };
     
-    this.get_url = function() {
-        var data = this.data;
-        var user_settings = this.user_settings;
-        
+    var get_url = function() {
         for (var i = 0; i < user_settings.length; i++) {
             var setting;
             
@@ -36,16 +34,27 @@
         return '/' + data.region + '/magazineArchive.nap?sort=' + data.sort + '&limit=' + data.limit + '&offset=' + data.offset + '&total=' + data.total + '&exclude=true';
     };
     
-    this.next = function(callback) {
-        if (this.get('next') !== null) {
-            this.data.next = this.get_url();
+    var isLoading = function() {
+        return get('loading');
+    };
+    
+    var loading = function(loading) {
+        data.loading = loading;
+    };
+    
+    var next = function(callback) {
+        if (get('next') === null) {
+            data.next = get_url();
         }
         
-        this.loading(true);
+        loading(true);
         
-        $.getJSON(this.data.next, function(json) {
-            this.data.next = json.next;
-            this.data.total = json.total;
+        console.log('geJson');
+        console.log(data.next);
+        console.log($);
+        $.getJSON(data.next, function(json) {
+            data.next = json.next;
+            data.total = json.total;
             
             var response = {
                 'issues': []
@@ -66,16 +75,9 @@
         });
     };
     
-    this.isLoading = function() {
-        return this.get('loading');
-    };
-    
-    this.loading = function(loading) {
-        this.data.loading = loading;
-    };
-    
     app.api = {
-        next: this.next,
-        loading: this.loading
+        next: next,
+        isLoading: isLoading,
+        loading: loading
     };
-})(window, jQuery, app);
+})(window, jQuery, Archive);
