@@ -80,4 +80,4 @@
         isLoading: isLoading,
         loading: loading
     };
-})(window, jQuery, Archive);
+})(window, jQuery, magazineArchive);

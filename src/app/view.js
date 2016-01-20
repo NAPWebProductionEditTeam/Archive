@@ -14,6 +14,6 @@
     app.view = {
         render: render
     };
-})(window, jQuery, Archive, Handlebars);
+})(window, jQuery, magazineArchive, Handlebars);
 
 
