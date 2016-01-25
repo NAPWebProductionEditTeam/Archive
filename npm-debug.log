@@ -1,0 +1,331 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose readDependencies loading dependencies from /Users/sa.zhang/Archive/package.json
+5 warn package.json archive@1.0.0 No README data
+6 verbose install where, deps [ '/Users/sa.zhang/Archive',
+6 verbose install   [ 'grunt-common-html2js',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-html-convert',
+6 verbose install     'grunt-string-replace',
+6 verbose install     'handlebars',
+6 verbose install     'grunt',
+6 verbose install     'grunt-contrib-concat',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch' ] ]
+7 verbose install where, peers [ '/Users/sa.zhang/Archive', [] ]
+8 verbose installManyTop reading for lifecycle /Users/sa.zhang/Archive/package.json
+9 info preinstall archive@1.0.0
+10 verbose readDependencies loading dependencies from /Users/sa.zhang/Archive/package.json
+11 silly cache add args [ 'grunt-html-convert@0.0.2', null ]
+12 verbose cache add spec grunt-html-convert@0.0.2
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'grunt-html-convert@0.0.2',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'grunt-html-convert',
+13 silly cache add   rawSpec: '0.0.2',
+13 silly cache add   spec: '0.0.2',
+13 silly cache add   type: 'version' }
+14 silly addNamed grunt-html-convert@0.0.2
+15 verbose addNamed "0.0.2" is a plain semver version for grunt-html-convert
+16 silly mapToRegistry name grunt-html-convert
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/grunt-html-convert
+20 verbose addNameVersion registry:https://registry.npmjs.org/grunt-html-convert not in flight; fetching
+21 silly cache add args [ 'grunt-string-replace@^1.2.1', null ]
+22 verbose cache add spec grunt-string-replace@^1.2.1
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'grunt-string-replace@^1.2.1',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'grunt-string-replace',
+23 silly cache add   rawSpec: '^1.2.1',
+23 silly cache add   spec: '>=1.2.1 <2.0.0',
+23 silly cache add   type: 'range' }
+24 silly addNamed grunt-string-replace@>=1.2.1 <2.0.0
+25 verbose addNamed ">=1.2.1 <2.0.0" is a valid semver range for grunt-string-replace
+26 silly addNameRange { name: 'grunt-string-replace',
+26 silly addNameRange   range: '>=1.2.1 <2.0.0',
+26 silly addNameRange   hasData: false }
+27 silly mapToRegistry name grunt-string-replace
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/grunt-string-replace
+31 verbose addNameRange registry:https://registry.npmjs.org/grunt-string-replace not in flight; fetching
+32 silly cache add args [ 'handlebars@^4.0.5', null ]
+33 verbose cache add spec handlebars@^4.0.5
+34 silly cache add parsed spec Result {
+34 silly cache add   raw: 'handlebars@^4.0.5',
+34 silly cache add   scope: null,
+34 silly cache add   name: 'handlebars',
+34 silly cache add   rawSpec: '^4.0.5',
+34 silly cache add   spec: '>=4.0.5 <5.0.0',
+34 silly cache add   type: 'range' }
+35 silly addNamed handlebars@>=4.0.5 <5.0.0
+36 verbose addNamed ">=4.0.5 <5.0.0" is a valid semver range for handlebars
+37 silly addNameRange { name: 'handlebars', range: '>=4.0.5 <5.0.0', hasData: false }
+38 silly mapToRegistry name handlebars
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/handlebars
+42 verbose addNameRange registry:https://registry.npmjs.org/handlebars not in flight; fetching
+43 silly cache add args [ 'grunt@^0.4.5', null ]
+44 verbose cache add spec grunt@^0.4.5
+45 silly cache add parsed spec Result {
+45 silly cache add   raw: 'grunt@^0.4.5',
+45 silly cache add   scope: null,
+45 silly cache add   name: 'grunt',
+45 silly cache add   rawSpec: '^0.4.5',
+45 silly cache add   spec: '>=0.4.5 <0.5.0',
+45 silly cache add   type: 'range' }
+46 silly addNamed grunt@>=0.4.5 <0.5.0
+47 verbose addNamed ">=0.4.5 <0.5.0" is a valid semver range for grunt
+48 silly addNameRange { name: 'grunt', range: '>=0.4.5 <0.5.0', hasData: false }
+49 silly mapToRegistry name grunt
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry uri https://registry.npmjs.org/grunt
+53 verbose addNameRange registry:https://registry.npmjs.org/grunt not in flight; fetching
+54 silly cache add args [ 'grunt-contrib-concat@^0.5.1', null ]
+55 verbose cache add spec grunt-contrib-concat@^0.5.1
+56 silly cache add parsed spec Result {
+56 silly cache add   raw: 'grunt-contrib-concat@^0.5.1',
+56 silly cache add   scope: null,
+56 silly cache add   name: 'grunt-contrib-concat',
+56 silly cache add   rawSpec: '^0.5.1',
+56 silly cache add   spec: '>=0.5.1 <0.6.0',
+56 silly cache add   type: 'range' }
+57 silly addNamed grunt-contrib-concat@>=0.5.1 <0.6.0
+58 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for grunt-contrib-concat
+59 silly addNameRange { name: 'grunt-contrib-concat',
+59 silly addNameRange   range: '>=0.5.1 <0.6.0',
+59 silly addNameRange   hasData: false }
+60 silly mapToRegistry name grunt-contrib-concat
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-concat
+64 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-concat not in flight; fetching
+65 silly cache add args [ 'grunt-contrib-jshint@^0.11.3', null ]
+66 verbose cache add spec grunt-contrib-jshint@^0.11.3
+67 silly cache add parsed spec Result {
+67 silly cache add   raw: 'grunt-contrib-jshint@^0.11.3',
+67 silly cache add   scope: null,
+67 silly cache add   name: 'grunt-contrib-jshint',
+67 silly cache add   rawSpec: '^0.11.3',
+67 silly cache add   spec: '>=0.11.3 <0.12.0',
+67 silly cache add   type: 'range' }
+68 silly addNamed grunt-contrib-jshint@>=0.11.3 <0.12.0
+69 verbose addNamed ">=0.11.3 <0.12.0" is a valid semver range for grunt-contrib-jshint
+70 silly addNameRange { name: 'grunt-contrib-jshint',
+70 silly addNameRange   range: '>=0.11.3 <0.12.0',
+70 silly addNameRange   hasData: false }
+71 silly mapToRegistry name grunt-contrib-jshint
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-jshint
+75 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-jshint not in flight; fetching
+76 silly cache add args [ 'grunt-contrib-uglify@^0.11.0', null ]
+77 verbose cache add spec grunt-contrib-uglify@^0.11.0
+78 silly cache add parsed spec Result {
+78 silly cache add   raw: 'grunt-contrib-uglify@^0.11.0',
+78 silly cache add   scope: null,
+78 silly cache add   name: 'grunt-contrib-uglify',
+78 silly cache add   rawSpec: '^0.11.0',
+78 silly cache add   spec: '>=0.11.0 <0.12.0',
+78 silly cache add   type: 'range' }
+79 silly addNamed grunt-contrib-uglify@>=0.11.0 <0.12.0
+80 verbose addNamed ">=0.11.0 <0.12.0" is a valid semver range for grunt-contrib-uglify
+81 silly addNameRange { name: 'grunt-contrib-uglify',
+81 silly addNameRange   range: '>=0.11.0 <0.12.0',
+81 silly addNameRange   hasData: false }
+82 silly mapToRegistry name grunt-contrib-uglify
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-uglify
+86 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-uglify not in flight; fetching
+87 silly cache add args [ 'grunt-contrib-watch@^0.6.1', null ]
+88 verbose cache add spec grunt-contrib-watch@^0.6.1
+89 silly cache add parsed spec Result {
+89 silly cache add   raw: 'grunt-contrib-watch@^0.6.1',
+89 silly cache add   scope: null,
+89 silly cache add   name: 'grunt-contrib-watch',
+89 silly cache add   rawSpec: '^0.6.1',
+89 silly cache add   spec: '>=0.6.1 <0.7.0',
+89 silly cache add   type: 'range' }
+90 silly addNamed grunt-contrib-watch@>=0.6.1 <0.7.0
+91 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for grunt-contrib-watch
+92 silly addNameRange { name: 'grunt-contrib-watch',
+92 silly addNameRange   range: '>=0.6.1 <0.7.0',
+92 silly addNameRange   hasData: false }
+93 silly mapToRegistry name grunt-contrib-watch
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch
+97 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-watch not in flight; fetching
+98 silly cache add args [ 'grunt-common-html2js@^0.3.5', null ]
+99 verbose cache add spec grunt-common-html2js@^0.3.5
+100 silly cache add parsed spec Result {
+100 silly cache add   raw: 'grunt-common-html2js@^0.3.5',
+100 silly cache add   scope: null,
+100 silly cache add   name: 'grunt-common-html2js',
+100 silly cache add   rawSpec: '^0.3.5',
+100 silly cache add   spec: '>=0.3.5 <0.4.0',
+100 silly cache add   type: 'range' }
+101 silly addNamed grunt-common-html2js@>=0.3.5 <0.4.0
+102 verbose addNamed ">=0.3.5 <0.4.0" is a valid semver range for grunt-common-html2js
+103 silly addNameRange { name: 'grunt-common-html2js',
+103 silly addNameRange   range: '>=0.3.5 <0.4.0',
+103 silly addNameRange   hasData: false }
+104 silly mapToRegistry name grunt-common-html2js
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry https://registry.npmjs.org/
+107 silly mapToRegistry uri https://registry.npmjs.org/grunt-common-html2js
+108 verbose addNameRange registry:https://registry.npmjs.org/grunt-common-html2js not in flight; fetching
+109 silly cache add args [ 'grunt-contrib-clean@^0.7.0', null ]
+110 verbose cache add spec grunt-contrib-clean@^0.7.0
+111 silly cache add parsed spec Result {
+111 silly cache add   raw: 'grunt-contrib-clean@^0.7.0',
+111 silly cache add   scope: null,
+111 silly cache add   name: 'grunt-contrib-clean',
+111 silly cache add   rawSpec: '^0.7.0',
+111 silly cache add   spec: '>=0.7.0 <0.8.0',
+111 silly cache add   type: 'range' }
+112 silly addNamed grunt-contrib-clean@>=0.7.0 <0.8.0
+113 verbose addNamed ">=0.7.0 <0.8.0" is a valid semver range for grunt-contrib-clean
+114 silly addNameRange { name: 'grunt-contrib-clean',
+114 silly addNameRange   range: '>=0.7.0 <0.8.0',
+114 silly addNameRange   hasData: false }
+115 silly mapToRegistry name grunt-contrib-clean
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-clean
+119 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-clean not in flight; fetching
+120 verbose request uri https://registry.npmjs.org/grunt-html-convert
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 3:54:40 PM
+123 verbose request id 96ed68711bebf5d9
+124 http request GET https://registry.npmjs.org/grunt-html-convert
+125 verbose request uri https://registry.npmjs.org/grunt-string-replace
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 3:54:40 PM
+128 http request GET https://registry.npmjs.org/grunt-string-replace
+129 verbose request uri https://registry.npmjs.org/handlebars
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 3:54:40 PM
+132 http request GET https://registry.npmjs.org/handlebars
+133 verbose request uri https://registry.npmjs.org/grunt
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 3:54:40 PM
+136 http request GET https://registry.npmjs.org/grunt
+137 verbose request uri https://registry.npmjs.org/grunt-contrib-concat
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 3:54:40 PM
+140 http request GET https://registry.npmjs.org/grunt-contrib-concat
+141 verbose request uri https://registry.npmjs.org/grunt-contrib-jshint
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 3:54:40 PM
+144 http request GET https://registry.npmjs.org/grunt-contrib-jshint
+145 verbose request uri https://registry.npmjs.org/grunt-contrib-uglify
+146 verbose request no auth needed
+147 info attempt registry request try #1 at 3:54:40 PM
+148 http request GET https://registry.npmjs.org/grunt-contrib-uglify
+149 verbose request uri https://registry.npmjs.org/grunt-contrib-watch
+150 verbose request no auth needed
+151 info attempt registry request try #1 at 3:54:40 PM
+152 http request GET https://registry.npmjs.org/grunt-contrib-watch
+153 verbose request uri https://registry.npmjs.org/grunt-common-html2js
+154 verbose request no auth needed
+155 info attempt registry request try #1 at 3:54:40 PM
+156 http request GET https://registry.npmjs.org/grunt-common-html2js
+157 verbose request uri https://registry.npmjs.org/grunt-contrib-clean
+158 verbose request no auth needed
+159 info attempt registry request try #1 at 3:54:40 PM
+160 http request GET https://registry.npmjs.org/grunt-contrib-clean
+161 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+162 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+163 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+164 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+165 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+166 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+167 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+168 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+169 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+170 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+171 info attempt registry request try #2 at 3:54:50 PM
+172 http request GET https://registry.npmjs.org/grunt
+173 info attempt registry request try #2 at 3:54:50 PM
+174 http request GET https://registry.npmjs.org/handlebars
+175 info attempt registry request try #2 at 3:54:50 PM
+176 http request GET https://registry.npmjs.org/grunt-string-replace
+177 info attempt registry request try #2 at 3:54:50 PM
+178 http request GET https://registry.npmjs.org/grunt-html-convert
+179 info attempt registry request try #2 at 3:54:50 PM
+180 http request GET https://registry.npmjs.org/grunt-contrib-concat
+181 info attempt registry request try #2 at 3:54:50 PM
+182 http request GET https://registry.npmjs.org/grunt-contrib-watch
+183 info attempt registry request try #2 at 3:54:50 PM
+184 http request GET https://registry.npmjs.org/grunt-contrib-uglify
+185 info attempt registry request try #2 at 3:54:50 PM
+186 http request GET https://registry.npmjs.org/grunt-contrib-jshint
+187 info attempt registry request try #2 at 3:54:50 PM
+188 http request GET https://registry.npmjs.org/grunt-common-html2js
+189 info attempt registry request try #2 at 3:54:50 PM
+190 http request GET https://registry.npmjs.org/grunt-contrib-clean
+191 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+192 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+193 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+194 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+195 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+196 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+197 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+198 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+199 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+200 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 23.235.43.162:443
+201 info attempt registry request try #3 at 3:55:50 PM
+202 http request GET https://registry.npmjs.org/grunt
+203 info attempt registry request try #3 at 3:55:50 PM
+204 http request GET https://registry.npmjs.org/handlebars
+205 info attempt registry request try #3 at 3:55:50 PM
+206 http request GET https://registry.npmjs.org/grunt-string-replace
+207 info attempt registry request try #3 at 3:55:50 PM
+208 http request GET https://registry.npmjs.org/grunt-html-convert
+209 info attempt registry request try #3 at 3:55:50 PM
+210 http request GET https://registry.npmjs.org/grunt-contrib-concat
+211 info attempt registry request try #3 at 3:55:50 PM
+212 http request GET https://registry.npmjs.org/grunt-contrib-watch
+213 info attempt registry request try #3 at 3:55:50 PM
+214 http request GET https://registry.npmjs.org/grunt-contrib-uglify
+215 info attempt registry request try #3 at 3:55:50 PM
+216 http request GET https://registry.npmjs.org/grunt-contrib-jshint
+217 info attempt registry request try #3 at 3:55:50 PM
+218 http request GET https://registry.npmjs.org/grunt-common-html2js
+219 info attempt registry request try #3 at 3:55:50 PM
+220 http request GET https://registry.npmjs.org/grunt-contrib-clean
+221 verbose stack Error: connect ECONNREFUSED 23.235.43.162:443
+221 verbose stack     at Object.exports._errnoException (util.js:870:11)
+221 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+221 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+222 verbose cwd /Users/sa.zhang/Archive
+223 error Darwin 14.5.0
+224 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+225 error node v4.2.6
+226 error npm  v2.14.12
+227 error code ECONNREFUSED
+228 error errno ECONNREFUSED
+229 error syscall connect
+230 error Error: connect ECONNREFUSED 23.235.43.162:443
+230 error     at Object.exports._errnoException (util.js:870:11)
+230 error     at exports._exceptionWithHostPort (util.js:893:20)
+230 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+230 error  { [Error: connect ECONNREFUSED 23.235.43.162:443]
+230 error   code: 'ECONNREFUSED',
+230 error   errno: 'ECONNREFUSED',
+230 error   syscall: 'connect',
+230 error   address: '23.235.43.162',
+230 error   port: 443,
+230 error   parent: 'archive' }
+231 error If you are behind a proxy, please make sure that the
+231 error 'proxy' config is set properly.  See: 'npm help config'
+232 verbose exit [ 1, true ]

@@ -9,3 +9,5 @@
         }
     });
 })(window, jQuery, magazineArchive);
+
+// Edit
